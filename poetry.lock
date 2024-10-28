@@ -1009,13 +1009,13 @@ tests = ["pytest (>=4.6)"]
 
 [[package]]
 name = "nbdev"
-version = "2.3.21"
+version = "2.3.31"
 description = "Create delightful software with Jupyter Notebooks"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "nbdev-2.3.21-py3-none-any.whl", hash = "sha256:aac531de0e81eec26bfcb856c1d430107276da408af7c32397ba95645168131a"},
-    {file = "nbdev-2.3.21.tar.gz", hash = "sha256:1f72879d539dcbe1dda646be771a7fa8f8f51d949721b5c9b219d9b97568f434"},
+    {file = "nbdev-2.3.31-py3-none-any.whl", hash = "sha256:6fe720e04f917c444289a2a97971a0dff94b50be4f4ba2e938e2bbbdf764693a"},
+    {file = "nbdev-2.3.31.tar.gz", hash = "sha256:6b404e070ce56751c5be96a6a901e7f2bb608217644dfafdefbf305bce2aed7a"},
 ]
 
 [package.dependencies]
@@ -1029,7 +1029,7 @@ PyYAML = "*"
 watchdog = "*"
 
 [package.extras]
-dev = ["black", "ipywidgets (<=8.0.4)", "jupyter", "matplotlib", "nbdev-numpy", "nbdev-stdlib", "pandas", "svg.py"]
+dev = ["black", "ipywidgets", "matplotlib", "nbclassic", "nbdev-numpy", "nbdev-stdlib", "pandas", "svg.py"]
 
 [[package]]
 name = "nest-asyncio"
@@ -2313,4 +2313,4 @@ test = ["pytest (>=6.0.0)", "setuptools (>=65)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "~3.10"
-content-hash = "54e1405c7d000bdd09453c02ab70e6d64d75d325fd5cca933fc536f689994f55"
+content-hash = "f2c6ff893fe561da7bca5b6c98ca07e760b9e96e7b97f5fed5459f810a2df768"
