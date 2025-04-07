@@ -22,7 +22,7 @@ dev = [
     "mypy==1.15.0",
     "nbdev==2.3.37",
     "pre-commit>=4.1.0",
-    "ruff==0.11.2",
+    "ruff==0.11.3",
 ]
 
 [tool.uv.sources]
