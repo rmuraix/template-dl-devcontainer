@@ -53,6 +53,20 @@ wheels = [
 ]
 
 [[package]]
+name = "build"
+version = "1.2.2.post1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama", marker = "os_name == 'nt' and sys_platform != 'linux'" },
+    { name = "packaging" },
+    { name = "pyproject-hooks" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/7d/46/aeab111f8e06793e4f0e421fcad593d547fb8313b50990f31681ee2fb1ad/build-1.2.2.post1.tar.gz", hash = "sha256:b36993e92ca9375a219c99e606a122ff365a760a2d4bba0caa09bd5278b608b7", size = 46701, upload-time = "2024-10-06T17:22:25.251Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/84/c2/80633736cd183ee4a62107413def345f7e6e3c01563dbca1417363cf957e/build-1.2.2.post1-py3-none-any.whl", hash = "sha256:1d61c0887fa860c01971625baae8bdd338e517b836a2f70dd1f7aa3a6b2fc5b5", size = 22950, upload-time = "2024-10-06T17:22:23.299Z" },
+]
+
+[[package]]
 name = "certifi"
 version = "2025.1.31"
 source = { registry = "https://pypi.org/simple" }
@@ -789,11 +803,12 @@ wheels = [
 
 [[package]]
 name = "nbdev"
-version = "2.4.2"
+version = "2.4.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "asttokens" },
     { name = "astunparse" },
+    { name = "build" },
     { name = "execnb" },
     { name = "fastcore" },
     { name = "ghapi" },
@@ -802,9 +817,9 @@ dependencies = [
     { name = "setuptools" },
     { name = "watchdog" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/6d/83/59a5f494cd936c6b6bc574fa88d71cd8bb232df7c157698d0c240c6de994/nbdev-2.4.2.tar.gz", hash = "sha256:3ad0a9376270e2086fd7d8d8e0dd989f8e82c7166e3d04b26c5c3ad8c2087f48", size = 67083, upload-time = "2025-04-03T01:00:55.978Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/45/81/738800a1d300f6eece9eb92f4239fb5a9b5ec4e1b193c078a854b8128307/nbdev-2.4.4.tar.gz", hash = "sha256:0e2a56974b33fa20b409ae5d2c7165e7f820cab176ce6a98d33561e280e4a892", size = 67280, upload-time = "2025-07-02T18:51:48.801Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c2/4a/9da0e166abf2cd9347ab3ead8b1b51c62befef6dbd77ba60bce2b0021af0/nbdev-2.4.2-py3-none-any.whl", hash = "sha256:1dc173684a87251017b0b7a02aa2f829fb1d6c927296be244274c0e7904e947d", size = 70082, upload-time = "2025-04-03T01:00:53.995Z" },
+    { url = "https://files.pythonhosted.org/packages/88/d3/68554196af42a9f09e9c561165f69b9507b28ae90b94c44f677e702c5cba/nbdev-2.4.4-py3-none-any.whl", hash = "sha256:f8afa8556c8a17355aff32b956988e476916e977a31714e9710f7495221b5812", size = 70244, upload-time = "2025-07-02T18:51:46.756Z" },
 ]
 
 [[package]]
@@ -1316,6 +1331,15 @@ wheels = [
 ]
 
 [[package]]
+name = "pyproject-hooks"
+version = "1.2.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/e7/82/28175b2414effca1cdac8dc99f76d660e7a4fb0ceefa4b4ab8f5f6742925/pyproject_hooks-1.2.0.tar.gz", hash = "sha256:1e859bd5c40fae9448642dd871adf459e5e2084186e8d2c2a79a824c970da1f8", size = 19228, upload-time = "2024-09-29T09:24:13.293Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/bd/24/12818598c362d7f300f18e74db45963dbcb85150324092410c8b49405e42/pyproject_hooks-1.2.0-py3-none-any.whl", hash = "sha256:9e5c6bfa8dcc30091c74b0cf803c81fdd29d94f01992a7707bc97babb1141913", size = 10216, upload-time = "2024-09-29T09:24:11.978Z" },
+]
+
+[[package]]
 name = "python-dateutil"
 version = "2.9.0.post0"
 source = { registry = "https://pypi.org/simple" }
@@ -1729,7 +1753,7 @@ dev = [
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "ipywidgets", specifier = ">=8.1.5" },
     { name = "mypy", specifier = "==1.16.1" },
-    { name = "nbdev", specifier = "==2.4.2" },
+    { name = "nbdev", specifier = "==2.4.4" },
     { name = "pre-commit", specifier = ">=4.1.0" },
     { name = "ruff", specifier = "==0.12.1" },
 ]
